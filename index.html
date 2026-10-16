@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Juan Luis Huerta Gonzales, Josh Collantes Tamariz">
+  <meta name="creator" content="Josh Collantes Tamariz (JC Corp)">
+  <meta name="description" content="Política de Privacidad oficial de Fortior Private, aplicación de gestión financiera propiedad de Juan Luis Huerta Gonzales, desarrollada por JC Corp (Josh Collantes Tamariz).">
+  <title>Política de Privacidad | Fortior Private</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0D0D0D;
+      --card-bg: #161616;
+      --card-border: rgba(212, 175, 55, 0.25);
+      --gold-primary: #D4AF37;
+      --gold-light: #F3E5AB;
+      --text-main: #EDEDED;
+      --text-muted: #A0A0A0;
+      --text-dim: #707070;
+      --accent: #1F8A70;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.65;
+      padding: 0;
+      margin: 0;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    header {
+      background: linear-gradient(180deg, rgba(212, 175, 55, 0.12) 0%, rgba(13, 13, 13, 0.98) 100%);
+      border-bottom: 1px solid var(--card-border);
+      padding: 60px 24px 40px;
+      text-align: center;
+    }
+
+    .brand-title {
+      font-family: 'Cinzel', serif;
+      font-size: 2.4rem;
+      letter-spacing: 2px;
+      color: var(--gold-primary);
+      text-transform: uppercase;
+      margin-bottom: 8px;
+    }
+
+    .brand-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+
+    .badge-updated {
+      display: inline-block;
+      background: rgba(212, 175, 55, 0.15);
+      border: 1px solid var(--gold-primary);
+      color: var(--gold-light);
+      padding: 6px 14px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 40px auto 80px;
+      padding: 0 24px;
+    }
+
+    .intro-card {
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 16px;
+      padding: 28px;
+      margin-bottom: 32px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .intro-card p {
+      color: var(--text-main);
+      font-size: 1.02rem;
+    }
+
+    .section-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 26px 28px;
+      margin-bottom: 22px;
+      transition: border-color 0.2s ease;
+    }
+
+    .section-card:hover {
+      border-color: var(--card-border);
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--gold-primary);
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+
+    .section-number {
+      background: rgba(212, 175, 55, 0.15);
+      color: var(--gold-primary);
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .section-card p {
+      color: #D6D6D6;
+      font-size: 0.96rem;
+      margin-bottom: 12px;
+    }
+
+    .section-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 10px 0 14px;
+    }
+
+    li {
+      color: #CFCFCF;
+      font-size: 0.94rem;
+      margin-bottom: 8px;
+    }
+
+    li strong {
+      color: #FFFFFF;
+    }
+
+    .highlight-box {
+      background: rgba(212, 175, 55, 0.08);
+      border-left: 3px solid var(--gold-primary);
+      padding: 14px 18px;
+      border-radius: 8px;
+      margin: 14px 0;
+      color: #E2E2E2;
+      font-size: 0.92rem;
+    }
+
+    .deletion-steps {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px dashed rgba(212, 175, 55, 0.4);
+      padding: 18px 20px;
+      border-radius: 12px;
+      margin-top: 14px;
+    }
+
+    .deletion-steps ol {
+      padding-left: 22px;
+    }
+
+    .deletion-steps li {
+      margin-bottom: 8px;
+    }
+
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 36px 24px;
+      text-align: center;
+      color: var(--text-dim);
+      font-size: 0.85rem;
+    }
+
+    footer a {
+      color: var(--gold-primary);
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 600px) {
+      .brand-title {
+        font-size: 1.8rem;
+      }
+      .section-card {
+        padding: 20px;
+      }
+    }
+
+    #particles-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    header, .container, footer {
+      position: relative;
+      z-index: 1;
+    }
+  </style>
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+
+  <header>
+    <h1 class="brand-title">FORTIOR PRIVATE</h1>
+    <p class="brand-subtitle">Gestor de Costos, Finanzas y Control Personal</p>
+    <p style="margin-top: 10px; font-size: 0.9rem; color: #E5C07B; letter-spacing: 0.5px;">
+      Titularidad: <strong>Juan Luis Huerta Gonzales</strong> &bull; Tecnología & Software: <strong>JC Corp</strong>
+    </p>
+    <span class="badge-updated">Última actualización: Octubre 2026</span>
+  </header>
+
+  <div class="container">
+    <div class="intro-card">
+      <p>
+        Bienvenido a <strong>Fortior Private</strong> (la "Aplicación"). Nos comprometemos firmemente a proteger tu privacidad, la confidencialidad y la seguridad de tu información financiera. Esta Política de Privacidad explica de forma transparente cómo recopilamos, utilizamos, almacenamos y protegemos tus datos cuando utilizas nuestra aplicación móvil, en estricto cumplimiento con las normativas de privacidad y las directrices para desarrolladores de <strong>Google Play Store</strong>.
+      </p>
+    </div>
+
+    <!-- 1. RESPONSABLE DEL TRATAMIENTO -->
+    <div class="section-card">
+      <h2 class="section-title"><span class="section-number">1</span> Titularidad y Responsable del Tratamiento</h2>
+      <p>
+        <strong>Fortior Private</strong> es una plataforma y aplicación móvil de gestión financiera de titularidad exclusiva de <strong>Juan Luis Huerta Gonzales</strong>. La arquitectura técnica, ingeniería de software y desarrollo han sido encomendados y realizados por <strong>Josh Collantes Tamariz (JC Corp)</strong>.
+      </p>
+      <p style="margin-top: 10px;">
+        Para cualquier consulta, duda, ejercicio de tus derechos de privacidad o soporte técnico, puedes contactarnos directamente al canal oficial:
+      </p>
+      <div class="highlight-box">
+        📧 <strong>Correo de Soporte y Privacidad:</strong> soporte.jccorp17@gmail.com
+      </div>
+    </div>
+
+    <!-- 2. DATOS QUE RECOPILAMOS -->
+    <div class="section-card">
+      <h2 class="section-title"><span class="section-number">2</span> Información que Recopilamos</h2>
+      <p>Recopilamos únicamente la información necesaria para brindarte las funciones esenciales de gestión financiera:</p>
+      <ul>
+        <li><strong>Información de la Cuenta:</strong> Dirección de correo electrónico y credenciales seguras de autenticación proporcionadas al registrarte mediante Firebase Authentication o inicio de sesión con Google.</li>
+        <li><strong>Datos Financieros y Transaccionales:</strong> Registros contables ingresados voluntariamente por ti, tales como importes de ingresos y gastos, fechas, nombres de comercios o conceptos, categorías, subcategorías, métodos de pago y saldos iniciales de cuentas.</li>
+        <li><strong>Imágenes de Comprobantes (Opcional):</strong> Si decides escanear comprobantes de pago (recibos, facturas o capturas de transferencias), la imagen se procesa en tu dispositivo mediante tecnología OCR (Reconocimiento Óptico de Caracteres) para extraer automáticamente el importe y el emisor.</li>
+      </ul>
+    </div>
+
+    <!-- 3. PERMISOS DEL DISPOSITIVO -->
+    <div class="section-card">
+      <h2 class="section-title"><span class="section-number">3</span> Permisos Requeridos del Dispositivo</h2>
+      <p>La aplicación solicita únicamente los permisos indispensables para ejecutar las funciones que el usuario solicita expresamente:</p>
+      <ul>
+        <li><strong>Cámara y Galería / Almacenamiento:</strong> Utilizados exclusivamente para capturar fotos de comprobantes o seleccionar imágenes de recibos que deseas digitalizar dentro de la app. Fortior Private <em>no</em> accede a tus fotos privadas no seleccionadas.</li>
+        <li><strong>Notificaciones:</strong> Permiso utilizado para enviarte confirmaciones de sincronización y recordatorios sobre tus presupuestos o registros.</li>
+        <li><strong>Acceso a Notificaciones de Pago (Opcional en Android):</strong> Función opcional que asiste en detectar notificaciones bancarias locales (ej. Yape / BCP) para agilizar la carga del movimiento financiero. Dicho procesamiento se realiza localmente en tu terminal móvil.</li>
+      </ul>
+    </div>
+
+    <!-- 4. FINALIDAD DEL USO DE LOS DATOS -->
+    <div class="section-card">
+      <h2 class="section-title"><span class="section-number">4</span> Finalidad del Tratamiento de tus Datos</h2>
+      <p>Tu información se utiliza exclusivamente para:</p>
+      <ul>
+        <li>Permitir el acceso seguro y autenticado a tu cuenta personal.</li>
+        <li>Calcular tus balances, flujo de caja, presupuestos y estadísticas financieras.</li>
+        <li>Mantener tus registros sincronizados en la nube para que puedas acceder a ellos desde tus dispositivos.</li>
+        <li>Generar reportes ejecutivos en formato Excel (.xlsx) cuando tú lo solicites expresamente.</li>
+      </ul>
+      <div class="highlight-box">
+        🚫 <strong>Política de Cero Comercialización:</strong> Fortior Private <strong>NUNCA</strong> vende, comercializa, alquila ni comparte tus datos personales o registros financieros con anunciantes, centrales de riesgo crediticio ni terceros con fines publicitarios.
+      </div>
+    </div>
+
+    <!-- 5. TERCEROS Y SERVICIOS EN LA NUBE -->
+    <div class="section-card">
+      <h2 class="section-title"><span class="section-number">5</span> Proveedores de Servicios y Tecnología en la Nube</h2>
+      <p>Para garantizar alta disponibilidad y seguridad de nivel empresarial, utilizamos la infraestructura de:</p>
+      <ul>
+        <li><strong>Google Firebase (Firebase Authentication & Cloud Firestore):</strong> Empleado para la autenticación segura y el almacenamiento cifrado de los registros en la nube de Google Cloud Platform.</li>
+        <li><strong>Google ML Kit (Text Recognition):</strong> Utilizado para el procesamiento local de imágenes de comprobantes y extracción de texto en el propio dispositivo.</li>
+      </ul>
+      <p>Dichos proveedores cumplen con rigurosos estándares internacionales de seguridad (incluyendo certificaciones ISO 27001, SOC 1, SOC 2 y cumplimiento de GDPR).</p>
+    </div>
+
+    <!-- 6. SEGURIDAD Y CIFRADO -->
+    <div class="section-card">
+      <h2 class="section-title"><span class="section-number">6</span> Seguridad y Cifrado de la Información</h2>
+      <p>
+        Implementamos estrictas medidas técnicas y organizativas para salvaguardar tu información:
+      </p>
+      <ul>
+        <li><strong>Cifrado en Tránsito:</strong> Toda la comunicación entre la aplicación y los servidores en la nube se transmite mediante conexiones cifradas SSL/TLS (HTTPS).</li>
+        <li><strong>Cifrado en Reposo:</strong> Los datos alojados en Cloud Firestore se resguardan utilizando algoritmos de cifrado avanzado AES-256.</li>
+        <li><strong>Aislamiento de Cuentas:</strong> Cada usuario cuenta con un identificador único (UID) y reglas de seguridad de Firestore que impiden el acceso de cualquier otro usuario a sus registros.</li>
+      </ul>
+    </div>
+
+    <!-- 7. ELIMINACIÓN DE CUENTA Y DATOS (GOOGLE PLAY POLICY) -->
+    <div class="section-card">
+      <h2 class="section-title"><span class="section-number">7</span> Retención y Eliminación de Cuenta y Datos</h2>
+      <p>
+        En cumplimiento con los requisitos de <strong>Eliminación de Cuentas de Google Play</strong>, tú tienes el control absoluto y el derecho de eliminar todos tus datos en cualquier momento.
+      </p>
+      <div class="deletion-steps">
+        <p><strong>¿Cómo eliminar tu cuenta y todos tus datos financieros?</strong></p>
+        <ol>
+          <li>Abre la aplicación <strong>Fortior Private</strong> e inicia sesión.</li>
+          <li>Ingresa al menú de <strong>Configuración / Ajustes</strong> (icono de engranaje).</li>
+          <li>Desplázate a la sección <strong>"Gestión de Cuenta y Seguridad"</strong>.</li>
+          <li>Selecciona <strong>"Privacidad y Estado de Cuenta"</strong> y pulsa en <strong>"Eliminar Cuenta Definitivamente"</strong>.</li>
+          <li>Confirma la acción. Tu cuenta, historial de gastos, ingresos, presupuestos y cuentas asociadas serán <strong>borrados de forma permanente e irreversible</strong> de nuestros servidores de inmediato.</li>
+        </ol>
+      </div>
+      <p style="margin-top: 12px;">
+        Alternativamente, puedes solicitar la eliminación manual de tu cuenta y todos los datos asociados enviando un correo electrónico a <a href="mailto:soporte.jccorp17@gmail.com" style="color: var(--gold-primary);">soporte.jccorp17@gmail.com</a> con el asunto <em>"Solicitud de Eliminación de Cuenta"</em> desde el correo con el que te registraste. Tu solicitud será procesada en un plazo máximo de 48 horas.
+      </p>
+    </div>
+
+    <!-- 8. MENORES DE EDAD -->
+    <div class="section-card">
+      <h2 class="section-title"><span class="section-number">8</span> Privacidad de Menores de Edad</h2>
+      <p>
+        Nuestra aplicación está destinada a personas mayores de 18 años o con capacidad legal para administrar finanzas personales. No recopilamos conscientemente información personal de menores de 13 años. Si detectamos que se ha recopilado información de un menor sin el consentimiento verificable de sus tutores legales, procederemos a eliminar dichos datos de forma inmediata.
+      </p>
+    </div>
+
+    <!-- 9. CAMBIOS A LA POLÍTICA -->
+    <div class="section-card">
+      <h2 class="section-title"><span class="section-number">9</span> Modificaciones a esta Política</h2>
+      <p>
+        Podemos actualizar periódicamente esta Política de Privacidad para reflejar mejoras en la aplicación, nuevas funciones o cambios normativos. Cualquier modificación entrará en vigor desde la fecha de publicación indicada en el encabezado. Te recomendamos revisar esta página de manera regular.
+      </p>
+    </div>
+
+    <!-- 10. CONTACTO -->
+    <div class="section-card">
+      <h2 class="section-title"><span class="section-number">10</span> Contacto y Titularidad</h2>
+      <p>
+        Si tienes preguntas o comentarios sobre esta Política de Privacidad o el tratamiento de tus datos personales, puedes escribirnos en cualquier momento:
+      </p>
+      <p style="margin-top: 10px;">
+        <strong>Aplicación:</strong> Fortior Private<br>
+        <strong>Titular Comercial & Marca:</strong> Juan Luis Huerta Gonzales<br>
+        <strong>Arquitectura & Desarrollo de Software:</strong> Josh Collantes Tamariz (JC Corp)<br>
+        <strong>Correo de Atención y Soporte:</strong> <a href="mailto:soporte.jccorp17@gmail.com" style="color: var(--gold-primary);">soporte.jccorp17@gmail.com</a>
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 <strong>Juan Luis Huerta Gonzales</strong>. Todos los derechos reservados.</p>
+    <p style="margin-top: 6px;">Tecnología, Arquitectura y Desarrollo por <strong>Josh Collantes Tamariz (JC Corp)</strong>.</p>
+    <p style="margin-top: 6px; font-size: 0.8rem; color: var(--text-dim);">Esta página cumple con los lineamientos de privacidad para desarrolladores de Google Play Console.</p>
+  </footer>
+
+  <script>
+    (function() {
+      const canvas = document.getElementById('particles-canvas');
+      if (!canvas) return;
+      const ctx = canvas.getContext('2d');
+      let width, height;
+
+      function resize() {
+        width = canvas.width = window.innerWidth;
+        height = canvas.height = window.innerHeight;
+      }
+      resize();
+      window.addEventListener('resize', resize);
+
+      const goldTints = [
+        '#FFDF73', // Oro brillante
+        '#E5C07B', // Champagne gold
+        '#D4AF37', // Oro clásico
+        '#FFEDB3', // Oro blanco brillante
+        '#C5A059'  // Oro ámbar
+      ];
+
+      function hexToRgb(hex) {
+        const bigint = parseInt(hex.replace('#', ''), 16);
+        return {
+          r: (bigint >> 16) & 255,
+          g: (bigint >> 8) & 255,
+          b: bigint & 255
+        };
+      }
+
+      const parsedTints = goldTints.reduce((acc, hex) => {
+        acc[hex] = hexToRgb(hex);
+        return acc;
+      }, {});
+
+      const particleCount = 42;
+      const particles = [];
+
+      for (let i = 0; i < particleCount; i++) {
+        particles.push({
+          x: Math.random() * width,
+          y: Math.random() * height,
+          radius: 1.0 + Math.random() * 2.2,
+          speed: 0.25 + Math.random() * 0.45,
+          phase: Math.random() * Math.PI * 2,
+          color: goldTints[Math.floor(Math.random() * goldTints.length)],
+          maxAlpha: 0.35 + Math.random() * 0.55
+        });
+      }
+
+      let time = 0;
+      function animate() {
+        ctx.clearRect(0, 0, width, height);
+        time += 0.012;
+
+        for (let i = 0; i < particleCount; i++) {
+          const p = particles[i];
+          p.y -= p.speed;
+          if (p.y < -15) {
+            p.y = height + 15;
+            p.x = Math.random() * width;
+          }
+
+          const sway = Math.sin(p.phase + time) * 1.5;
+          const currentX = p.x + sway;
+          const flicker = (Math.sin(p.phase * 2 + time * 3) + 1.0) / 2.0;
+          const alpha = p.maxAlpha * (0.35 + 0.65 * flicker);
+          const rgb = parsedTints[p.color];
+
+          // Halo dorado suave
+          ctx.beginPath();
+          ctx.arc(currentX, p.y, p.radius * 2.5, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ',' + (alpha * 0.25) + ')';
+          ctx.fill();
+
+          // Núcleo brillante
+          ctx.beginPath();
+          ctx.arc(currentX, p.y, p.radius, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(' + rgb.r + ',' + rgb.g + ',' + rgb.b + ',' + alpha + ')';
+          ctx.fill();
+        }
+
+        requestAnimationFrame(animate);
+      }
+
+      animate();
+    })();
+  </script>
+</body>
+</html>
