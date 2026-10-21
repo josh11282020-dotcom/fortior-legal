@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://josh11282020-dotcom.github.io/fortior-legal/sitemap.xml

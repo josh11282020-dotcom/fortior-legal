@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b0c0f" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#f7f3e8" media="(prefers-color-scheme: light)">
+  <meta name="description" content="Centro de seguridad de Fortior Private: arquitectura de datos, permisos, controles del usuario y reporte responsable de incidentes.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="https://josh11282020-dotcom.github.io/fortior-legal/security.html">
+  <link rel="icon" type="image/png" href="assets/favicon-square.png">
+  <link rel="stylesheet" href="styles.css">
+  <script>(function(){try{var t=localStorage.getItem('fortior-legal-theme');document.documentElement.dataset.theme=t||(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light')}catch(e){document.documentElement.dataset.theme='dark'}})();</script>
+  <title>Seguridad y permisos | Fortior Private</title>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header"><div class="nav-shell"><a class="brand" href="index.html"><img src="assets/favicon-square.png" alt="" width="43" height="43"><span class="brand-copy">Fortior Private<small>Tu guía financiera</small></span></a><nav class="nav-links" id="site-navigation" data-nav aria-label="Navegación principal"><a href="index.html">Inicio</a><a href="privacy.html">Privacidad</a><a href="security.html" aria-current="page">Seguridad</a><a href="delete-account.html">Eliminar cuenta</a><a href="support.html">Ayuda</a></nav><div class="nav-actions"><button class="icon-button" type="button" data-theme-toggle aria-label="Cambiar tema"><span data-theme-icon aria-hidden="true">☾</span></button><button class="icon-button menu-button" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-navigation" aria-label="Abrir menú"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button></div></div></header>
+  <main id="contenido">
+    <div class="page-shell">
+      <header class="page-hero"><p class="eyebrow">Centro de confianza</p><h1>Seguridad <span class="accent-text">sin exageraciones</span></h1><p class="page-lead">Explicamos qué protege Fortior, dónde vive cada dato y qué controles están en tus manos.</p><div class="meta-row"><span class="meta-chip">HTTPS/TLS</span><span class="meta-chip">Confirmación antes de guardar</span><span class="meta-chip">Permisos revocables</span></div></header>
+      <div class="legal-layout">
+        <nav class="toc" aria-label="Índice"><strong>En esta página</strong><a href="#modelo">Modelo</a><a href="#capas">Capas</a><a href="#permisos">Permisos</a><a href="#alertas">Alertas</a><a href="#usuario">Buenas prácticas</a><a href="#limites">Límites</a><a href="#reporte">Reportar</a></nav>
+        <article class="legal-content">
+          <section class="legal-section" id="modelo">
+            <h2>1. Modelo de protección</h2>
+            <p>Fortior reduce riesgos separando tres espacios: procesamiento local, registros confirmados en Firebase y archivos que tú decides crear en Google Drive. El asistente prepara borradores; solo una acción explícita de <strong>Guardar</strong> convierte el borrador en un movimiento de tu cuenta.</p>
+            <div class="notice"><span class="notice-icon" aria-hidden="true">✓</span><div><strong>Principio central</strong><p>Una detección automática nunca debe modificar silenciosamente tu balance. Revisa siempre monto, tipo, fecha, concepto, cuenta y categoría.</p></div></div>
+          </section>
+          <section class="legal-section" id="capas">
+            <h2>2. Dónde se procesa la información</h2>
+            <div class="card-grid">
+              <article class="card"><span class="card-icon" aria-hidden="true">1</span><h3>En tu dispositivo</h3><p>OCR, filtro de alertas, borradores, chat breve, meta, preferencias y aprendizaje de categorías.</p></article>
+              <article class="card"><span class="card-icon" aria-hidden="true">2</span><h3>En Firebase</h3><p>Cuenta, perfil y movimientos confirmados, cuentas, categorías y presupuestos sincronizados.</p></article>
+              <article class="card"><span class="card-icon" aria-hidden="true">3</span><h3>En tu Google Drive</h3><p>Libro contable opcional creado tras autorización; tú controlas el archivo y su eliminación.</p></article>
+            </div>
+            <h3>Controles aplicados</h3>
+            <ul><li>Conexiones HTTPS/TLS con los servicios de Google.</li><li>Autenticación por Firebase y separación lógica de registros mediante UID.</li><li>Almacenamiento privado de la cola de alertas en Android.</li><li>Canal interno de Android protegido mediante permiso de firma.</li><li>Límites de cantidad y retención para sugerencias, chat y aprendizaje.</li><li>Protección visual opcional para bloquear capturas y ocultar la vista reciente en Android.</li></ul>
+          </section>
+          <section class="legal-section" id="permisos">
+            <h2>3. Permisos y alternativas</h2>
+            <div class="data-table-wrap" tabindex="0"><table class="data-table"><thead><tr><th>Permiso o acceso</th><th>Finalidad</th><th>Alternativa sin permiso</th></tr></thead><tbody>
+              <tr><td><strong>Internet</strong></td><td>Autenticación, Firestore y sincronización opcional con Google.</td><td>Puedes consultar parte del estado local, pero la cuenta y la nube requieren conexión.</td></tr>
+              <tr><td><strong>Micrófono</strong></td><td>Dictar movimientos mediante el reconocedor de voz del sistema.</td><td>Escribir el movimiento.</td></tr>
+              <tr><td><strong>Cámara / selector de fotos</strong></td><td>Escanear el comprobante que eliges.</td><td>Escribir o dictar los datos.</td></tr>
+              <tr><td><strong>Archivos, Android antiguo</strong></td><td>Compatibilidad heredada para seleccionar comprobantes o guardar exportaciones iniciadas por ti; no se utiliza para recorrer archivos ajenos a la función.</td><td>Usar entrada manual o un selector compatible cuando esté disponible.</td></tr>
+              <tr><td><strong>Publicar notificaciones y vibrar</strong></td><td>Avisarte de una posible entrada detectada y abrir su revisión.</td><td>Revisar Forti manualmente sin alertas sonoras.</td></tr>
+              <tr><td><strong>Acceso especial a notificaciones, Android</strong></td><td>Filtrar vistas previas con forma de transacción aun con la app cerrada.</td><td>Registrar manualmente, por voz o por comprobante.</td></tr>
+              <tr><td><strong>Google Drive, opcional</strong></td><td>Crear y actualizar el libro que autorizas.</td><td>Exportar PDF/XLSX localmente.</td></tr>
+            </tbody></table></div>
+            <p>No se solicita acceso a contactos, ubicación ni SMS. Un permiso denegado no debe bloquear las rutas manuales equivalentes.</p>
+          </section>
+          <section class="legal-section" id="alertas">
+            <h2>4. Por qué el acceso a notificaciones es especial</h2>
+            <p>Android no ofrece un permiso que exponga únicamente notificaciones de Yape o de un banco. Su pantalla de sistema concede acceso general. Fortior limita el uso mediante filtros locales de paquete y contenido, pero esta limitación corresponde al código de la app, no al permiso de Android.</p>
+            <ul><li>Solo se conservan fragmentos que parezcan una transacción y contengan un monto.</li><li>Las vistas previas pendientes caducan tras 24 horas.</li><li>Se guardan identificadores locales limitados para prevenir duplicados.</li><li>Fortior no abre Gmail, no inicia sesión en el buzón y no lee SMS.</li><li>Puedes revocar el acceso en cualquier momento desde Ajustes del sistema.</li></ul>
+            <p>Consulta la descripción completa en <a href="privacy.html#alertas">Política de Privacidad → Alertas Android</a>.</p>
+          </section>
+          <section class="legal-section" id="usuario">
+            <h2>5. Recomendaciones para tu cuenta</h2>
+            <ul><li>Usa una contraseña única y protege el acceso al correo vinculado.</li><li>No compartas códigos de autenticación ni contraseñas con soporte.</li><li>Revisa cada borrador antes de guardarlo; una notificación puede ser incompleta o ambigua.</li><li>Activa la protección visual si usas Fortior en lugares compartidos.</li><li>Revoca el acceso a notificaciones o Drive cuando dejes de usar esas funciones.</li><li>Borra de Drive o del dispositivo las exportaciones que ya no necesites.</li><li>Mantén Android/iOS y la app actualizados.</li></ul>
+          </section>
+          <section class="legal-section" id="limites">
+            <h2>6. Límites y transparencia</h2>
+            <p>No existe un sistema con seguridad absoluta. Fortior depende parcialmente de Firebase, Google Cloud, el sistema operativo y la configuración del dispositivo. Por eso no prometemos invulnerabilidad, disponibilidad continua ni detección perfecta de todas las alertas.</p>
+            <p>Yape, Plin, BCP, Interbank, Scotiabank, BBVA, Gmail y Google son marcas de sus respectivos titulares. Su mención describe compatibilidad técnica; <strong>Fortior no está afiliada, patrocinada ni autorizada por esas entidades</strong>, salvo acuerdo expreso futuro.</p>
+          </section>
+          <section class="legal-section" id="reporte">
+            <h2>7. Reporte responsable</h2>
+            <p>Si encuentras una posible vulnerabilidad o exposición de datos, escribe a <a href="mailto:soporte.jccorp17@gmail.com?subject=Seguridad%20-%20Fortior%20Private">soporte.jccorp17@gmail.com</a> con el asunto <strong>Seguridad - Fortior Private</strong>.</p>
+            <p>Incluye versión de la app, dispositivo, pasos para reproducir y el impacto esperado. No adjuntes datos de terceros, contraseñas ni información financiera real. Evita explotar, publicar o acceder a información ajena mientras investigamos.</p>
+            <div class="button-row"><a class="button button-primary" href="mailto:soporte.jccorp17@gmail.com?subject=Seguridad%20-%20Fortior%20Private">Reportar de forma responsable</a><a class="button button-secondary" href="support.html">Ayuda general</a></div>
+          </section>
+        </article>
+      </div>
+    </div>
+  </main>
+  <footer class="site-footer"><div class="page-shell"><div class="footer-grid"><div class="footer-brand"><a class="brand" href="index.html"><img src="assets/favicon-square.png" alt="" width="43" height="43"><span class="brand-copy">Fortior Private<small>Tu guía financiera</small></span></a><p>Seguridad explicada con precisión y control del usuario.</p></div><div class="footer-column"><strong>Legal</strong><a href="privacy.html">Privacidad</a><a href="terms.html">Términos</a></div><div class="footer-column"><strong>Control</strong><a href="delete-account.html">Eliminar cuenta</a><a href="security.html">Seguridad</a></div><div class="footer-column"><strong>Contacto</strong><a href="support.html">Ayuda</a><a href="mailto:soporte.jccorp17@gmail.com">Correo oficial</a></div></div><div class="footer-bottom"><p>© <span data-current-year>2026</span> Fortior Private.</p><p>Seguridad actualizada: 20/10/2026</p></div></div></footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
